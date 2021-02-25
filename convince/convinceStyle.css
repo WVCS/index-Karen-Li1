@@ -1,8 +1,7 @@
 a{text-decoration: none;
   color: white;}
   
-  a:hover{background-color: #3d5a80;
-    font-size: 20px; }
+a:hover{background-color: #3d5a80;}
 
 .topnav {overflow: hidden;
   background-color: #403d39;}
