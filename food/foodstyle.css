@@ -12,3 +12,7 @@
 
 .topnav a:hover{
   color: #ca5e51;}
+
+.topnav a.active {
+  color: #ca5e51;
+}
