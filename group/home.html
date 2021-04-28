@@ -19,7 +19,8 @@
         <b><a href="#profile" class="link">PROFILE</a></b>
         <b><a href="#music" class="link">MUSIC</a></b>
         <b><a href="#live" class="link">LIVE</a></b>
-        <b><a href="#gallery" class="link" class="galleryspace">GALLERY</a></b>
+        <b><a href="#gallery" class="link">GALLERY</a></b>
+	<br class="galleryspace">
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -312,18 +313,18 @@
     <div id="app">
       <a href="https://www.instagram.com/therosesound"> <img class="bottom" class="app" src="https://cdn.discordapp.com/attachments/715080120288673832/834666987493523456/Untitled789_20210421224627.PNG" />
       <img class="top" class="app" src="https://day6.jype.com/Content/Pc/images/common/sns_instagram.png" /> </a>
-   </div>
+    </div>
   
-  <div id="app">
-  <a href="https://twitter.com/therosesound"> <img class="bottom" class="app" src="https://cdn.discordapp.com/attachments/715080120288673832/834666987534942208/Untitled789_20210421224616.PNG" />
-  <img class="top" class="app" src="https://day6.jype.com/Content/Pc/images/common/sns_twitter.png" /> </a>
-</div>
+    <div id="app">
+      <a href="https://twitter.com/therosesound"> <img class="bottom" class="app" src="https://cdn.discordapp.com/attachments/715080120288673832/834666987534942208/Untitled789_20210421224616.PNG" />
+      <img class="top" class="app" src="https://day6.jype.com/Content/Pc/images/common/sns_twitter.png" /> </a>
+    </div>
   
-  <div id="app">
-  <a href="https://www.youtube.com/channel/UCtAVRsk51HikP2jrVHCWb7Q"> <img class="bottom" class="app" src="https://cdn.discordapp.com/attachments/715080120288673832/834666987580948480/Untitled789_20210421224604.PNG" />
-  <img class="top" class="app" src="https://day6.jype.com/Content/Pc/images/common/sns_youtube.png" /> </a>
-</div>
-</div>
+    <div id="app">
+      <a href="https://www.youtube.com/channel/UCtAVRsk51HikP2jrVHCWb7Q"> <img class="bottom" class="app" src="https://cdn.discordapp.com/attachments/715080120288673832/834666987580948480/Untitled789_20210421224604.PNG" />
+      <img class="top" class="app" src="https://day6.jype.com/Content/Pc/images/common/sns_youtube.png" /> </a>
+    </div>
+  </div>
 
 </body>
 
@@ -339,6 +340,10 @@ body {
 }
   
 .mobilenav{
+  display: none;
+}
+	
+.galleryspace{
   display: none;
 }
   
@@ -434,14 +439,17 @@ h1 {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .bb:hover {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .cc:hover {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .dd:hover {
   letter-spacing: 10px;
   color: #D53A3A;
@@ -458,8 +466,8 @@ p{
 }
   
 .pspace{
-    padding-bottom: 3vw;
-  }
+  padding-bottom: 3vw;
+}
 
 .all{
   width: 100%;
@@ -473,28 +481,28 @@ p{
 }
 
 .box {
-	background-color: black;
-	color: white;
-	border-radius: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
 
 .a {
-	grid-column: 1 / 2;
-	grid-row: 1;
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
 .b {
-	grid-column: 2 /3 ;
-	grid-row: 1;
+  grid-column: 2 /3 ;
+  grid-row: 1;
 }
 
 .c {
-	grid-column: 3/4 ;
-	grid-row: 1 ;
+  grid-column: 3/4 ;
+  grid-row: 1 ;
 }
 	
 .d {
-	grid-column: 4/5;
+  grid-column: 4/5;
   grid-row: 1;
 }
 
@@ -512,6 +520,7 @@ p{
   display: flex;
   align-items: center;
 }
+	
 #cube {
   width: 100%;
   height: 2px;
@@ -519,7 +528,10 @@ p{
   transition: background-color 0.7s;
   border: none;
 }
-.container:hover > #cube { background-color: #D53A3A; }
+	
+.container:hover > #cube { 
+  background-color: #D53A3A; 
+}
 
 .music{
   width: 100%;
@@ -540,8 +552,8 @@ p{
 }
   
 .box {
-	color: white;
-	padding-top: 0px;
+  color: white;
+  padding-top: 0px;
   text-align: left;
 }
 
@@ -586,64 +598,66 @@ li{
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
 
 .CSSgal {
-	position: relative;
-	overflow: hidden;
-	height: 700px; 
+  position: relative;
+  overflow: hidden;
+  height: 700px; 
   padding-bottom: 4vw;
   padding-bottom: 3vw;
 }
 
 .CSSgal .slider {
-	height: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	transition: 0.8s;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
 }
 
 .CSSgal .slider > * {
-	font-size: 1rem;
-	display: inline-block;
-	white-space: normal;
-	vertical-align: top;
-	height: 100%;
-	width: 100%;
-	background: none 50% no-repeat;
-	background-size: cover;
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
 }
 
 .CSSgal .prevNext {
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	width: 100%;
-	height: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
 }
 
 .CSSgal .prevNext > div+div {
-	visibility: hidden; 
+  visibility: hidden; 
 }
 
 .CSSgal .prevNext a {
-	position: absolute;
-	width:       60px;
-	height:      60px;
-	text-align: center;
-	opacity: 0.6;
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-	-webkit-transform: translateY(-50%);
-					transform: translateY(-50%);
-	left: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
 }
+	
 .CSSgal .prevNext a:hover {
-	opacity: 1;
+  opacity: 1;
 }
+	
 .CSSgal .prevNext a+a {
-	left: auto;
-	right: 0;
+  left: auto;
+  right: 0;
 }
 
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgal >s:target ~ .prevNext >* {visibility: hidden;}
 #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
 #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
 #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
@@ -659,12 +673,12 @@ li{
 #s6:target ~ .slider {transform: translateX(-500%); -webkit-transform: translateX(-500%);}
 
 .CSSgal{
-	text-align: center;
+  text-align: center;
 }
 
 .CSSgal a {
-	margin: 0 3px;
-	text-decoration: none;
+  margin: 0 3px;
+  text-decoration: none;
 }
 
 .arrow{
@@ -683,7 +697,7 @@ li{
 
 #app img {
   position: absolute;
-  width: 2.3vw;
+  width: 1.5vw;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
@@ -717,6 +731,10 @@ body {
 }
   
 .mobilenav{
+  display: none;
+}
+	
+.galleryscape{
   display: none;
 }
   
@@ -851,28 +869,28 @@ p{
 }
 
 .box {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
   padding-bottom: 5vw;
 }
 
 .a {
-	grid-column: 1 / 2;
-	grid-row: 1;
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
 .b {
-	grid-column: 2 /3 ;
-	grid-row: 1;
+  grid-column: 2 /3 ;
+  grid-row: 1;
 }
 
 .c {
-	grid-column: 1/2 ;
-	grid-row: 2/3;
+  grid-column: 1/2 ;
+  grid-row: 2/3;
 }
 	
 .d {
-	grid-column: 2/3;
+  grid-column: 2/3;
   grid-row: 2/3;
   padding-bottom: 4vw;
 }
@@ -891,6 +909,7 @@ p{
   display: flex;
   align-items: center;
 }
+	
 #cube {
   width: 100%;
   height: 2px;
@@ -898,7 +917,10 @@ p{
   transition: background-color 0.7s;
   border: none;
 }
-.container:hover > #cube { background-color: #D53A3A; }
+	
+.container:hover > #cube { 
+  background-color: #D53A3A; 
+}
 
 .music{
   width: 100%;
@@ -919,8 +941,8 @@ p{
   }
   
 .box {
-	color: white;
-	padding-top: 0px;
+  color: white;
+  padding-top: 0px;
   text-align: left;
 }
 
@@ -965,61 +987,63 @@ li{
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
 
 .CSSgal {
-	position: relative;
-	overflow: hidden;
-	height: 500px; 
+  position: relative;
+  overflow: hidden;
+  height: 500px; 
   padding-bottom: 3vw;
   padding-top: 1vw;
 }
 
 .CSSgal .slider {
-	height: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	transition: 0.8s;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
 }
 
 .CSSgal .slider > * {
-	font-size: 1rem;
-	display: inline-block;
-	white-space: normal;
-	vertical-align: top;
-	height: 100%;
-	width: 100%;
-	background: none 50% no-repeat;
-	background-size: cover;
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
 }
 
 .CSSgal .prevNext {
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	width: 100%;
-	height: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
 }
 
 .CSSgal .prevNext > div+div {
-	visibility: hidden; 
+  visibility: hidden; 
 }
 
 .CSSgal .prevNext a {
-	position: absolute;
-	width:       60px;
-	height:      60px;
-	text-align: center;
-	opacity: 0.6;
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-	-webkit-transform: translateY(-50%);
-					transform: translateY(-50%);
-	left: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
 }
+	
 .CSSgal .prevNext a:hover {
-	opacity: 1;
+  opacity: 1;
 }
+	
 .CSSgal .prevNext a+a {
-	left: auto;
-	right: 0;
+  left: auto;
+  right: 0;
 }
 
 .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
@@ -1038,12 +1062,12 @@ li{
 #s6:target ~ .slider {transform: translateX(-500%); -webkit-transform: translateX(-500%);}
 
 .CSSgal{
-	text-align: center;
+  text-align: center;
 }
 
 .CSSgal a {
-	margin: 0 3px;
-	text-decoration: none;
+  margin: 0 3px;
+  text-decoration: none;
 }
 
 .arrow{
@@ -1196,6 +1220,7 @@ html, body{
 .banner img.top:hover {
   opacity:0;
 }
+	
 h1{
   color: white;
   letter-spacing: 5px;
@@ -1215,14 +1240,17 @@ h1 {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .bb:hover {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .cc:hover {
   letter-spacing: 10px; 
   color: #D53A3A;
 }
+	
 .dd:hover {
   letter-spacing: 10px;
   color: #D53A3A;
@@ -1238,9 +1266,9 @@ p{
   letter-spacing: 2px;
 }
 
-  .pspace{
-    padding-bottom: 4vw;
-  }
+.pspace{
+  padding-bottom: 4vw;
+}
 
 .all{
   width: 100%;
@@ -1254,29 +1282,29 @@ p{
 }
 
 .box {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
   padding-bottom: 2vw;
 }
 
 .a {
-	grid-column: 1 / 2;
-	grid-row: 2/3;
+  grid-column: 1 / 2;
+  grid-row: 2/3;
 }
 
 .b {
-	grid-column: 1/2 ;
-	grid-row: 1/2;
+  grid-column: 1/2 ;
+  grid-row: 1/2;
   padding-bottom: 2vw;
 }
 
 .c {
-	grid-column: 1/2 ;
-	grid-row: 4/5 ;
+  grid-column: 1/2 ;
+  grid-row: 4/5 ;
 }
 	
 .d {
-	grid-column: 1/2;
+  grid-column: 1/2;
   grid-row: 3/4;
   padding-bottom: 2vw;
 }
@@ -1295,6 +1323,7 @@ p{
   display: flex;
   align-items: center;
 }
+	
 #cube {
   width: 100%;
   height: 2px;
@@ -1302,7 +1331,10 @@ p{
   transition: background-color 0.7s;
   border: none;
 }
-.container:hover > #cube { background-color: #D53A3A; }
+	
+.container:hover > #cube { 
+  background-color: #D53A3A; 
+}
 
 .music{
   width: 100%;
@@ -1316,8 +1348,8 @@ p{
 }
   
 .box {
-	color: white;
-	padding-top: 0px;
+  color: white;
+  padding-top: 0px;
   text-align: left;
 }
 
@@ -1362,61 +1394,63 @@ li{
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
 
 .CSSgal {
-	position: relative;
-	overflow: hidden;
-	height: 300px; 
+  position: relative;
+  overflow: hidden;
+  height: 300px; 
   padding-bottom: 4vw;
   padding-top: 2vw;
 }
 
 .CSSgal .slider {
-	height: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	transition: 0.8s;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
 }
 
 .CSSgal .slider > * {
-	font-size: 1rem;
-	display: inline-block;
-	white-space: normal;
-	vertical-align: top;
-	height: 100%;
-	width: 100%;
-	background: none 50% no-repeat;
-	background-size: cover;
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
 }
 
-.CSSgal .prevNext {
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	width: 100%;
-	height: 0;
+.CSSgal .prevNext { 
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
 }
 
 .CSSgal .prevNext > div+div {
-	visibility: hidden; 
+  visibility: hidden; 
 }
 
 .CSSgal .prevNext a {
-	position: absolute;
-	width:       60px;
-	height:      60px;
-	text-align: center;
-	opacity: 0.6;
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-	-webkit-transform: translateY(-50%);
-					transform: translateY(-50%);
-	left: 0;
+  position: absolute;
+  width:       60px;
+  height:      60px;
+  text-align: center;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
 }
+	
 .CSSgal .prevNext a:hover {
-	opacity: 1;
+  opacity: 1;
 }
+	
 .CSSgal .prevNext a+a {
-	left: auto;
-	right: 0;
+  left: auto;
+  right: 0;
 }
 
 .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
@@ -1435,12 +1469,12 @@ li{
 #s6:target ~ .slider {transform: translateX(-500%); -webkit-transform: translateX(-500%);}
 
 .CSSgal{
-	text-align: center;
+  text-align: center;
 }
 
 .CSSgal a {
-	margin: 0 3px;
-	text-decoration: none;
+  margin: 0 3px;
+  text-decoration: none;
 }
 
 .arrow{
@@ -1459,7 +1493,7 @@ li{
 
 #app img {
   position: absolute;
-  width: 2.3vw;
+  width: 3.6vw;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
