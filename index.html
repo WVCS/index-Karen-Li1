@@ -2,71 +2,536 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Karen's Website </title>
-  <link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link rel="icon" href="https://cdn.discordapp.com/attachments/715080120288673832/827008532570177536/image0.png">
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> home </title>
 </head>
-  
 <body>
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="noun.html">Noun</a>
-    <a href="convince/home.html">Convince</a>
-    <a href="food/home.html"> Food </a>
-    <a href="event/home.html"> Event </a>
-    <a href="group/home.html"> Group </a>
-    <a href="https://wvcs.github.io/index-achsahanil1/Fun/index.html"> Amusement </a>
-    <a href="store/home.html"> Store </a>
+  <div id="menuArea">
+  <input type="checkbox" id="menuToggle"></input>
+
+<label for="menuToggle" class="menuOpen">
+  <div class="open"></div>
+</label>
+
+<div class="menu menuEffects">
+  <label for="menuToggle"></label>
+  <div class="menuContent">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="noun.html">NOUN</a></li>
+      <li><a href="convince/home.html">CONVINCE</a></li>
+      <li><a href="food/home.html">FOOD</a></li>
+      <li><a href="event/home.html">EVENT</a></li>
+      <li><a href="group/home.html">GROUP</a></li>
+      <li><a href="https://wvcs.github.io/index-achsahanil1/Fun/index.html">AMUSEMENT</a></li>
+      <li><a href="store/home.html">STORE</a></li>
+      <li><a href="#">BEACH</a></li>
+    </ul>
   </div>
+</div>
+</div>
 
- <h1><b><u> Karen's Website </h1></b></u>
-   
- <br>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1></h1>
+  </div>
+</div>
+
+<div class="row">
+    <div class="box" id="image-one">
+      <div class="overlay">
+        <div class="title">
+          <a href="index.html"> HOME </a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-two">
+      <div class="overlay">
+        <div class="title">
+          <a href="noun.html"> NOUN </a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-three">
+      <div class="overlay">
+        <div class="title">
+          <a href="convince/home.html"> CONVINCE </a>
+        </div>
+      </div>
+    </div>
+  </div> 
   
- <img src="personal artifact.png">
+  <div class="row">
+    <div class="box" id="image-four">
+      <div class="overlay">
+        <div class="title">
+          <a href="food/home.html"> FOOD</a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-five">
+      <div class="overlay">
+        <div class="title">
+          <a href="event/home.html"> EVENT </a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-six">
+      <div class="overlay">
+        <div class="title">
+          <a href="group/home.html"> GROUP </a>
+        </div>
+      </div>
+    </div>
+  </div>  
   
-</body>
+  <div class="row">
+    <div class="box" id="image-seven">
+      <div class="overlay">
+        <div class="title">
+          <a href="https://wvcs.github.io/index-achsahanil1/Fun/index.html"> AMUSEMENT</a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-eight">
+      <div class="overlay">
+        <div class="title">
+          <a href="store/home.html"> STORE </a>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="image-nine">
+      <div class="overlay">
+        <div class="title">
+          <a href="#"> BEACH </a>
+        </div>
+      </div>
+    </div>
+  </div>  
 
-<!------------------------------------------------------STYLE START------------------------------------------------------------>
-
-<style> 
-
-  body{
-  background-color: #fff1e6;
-  text-align: left;
-  font-family: 'Lato';
+<div class="footer">
+  <p> Karen Li </p>
+</div>
   
+  
+  </body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+input {
+  display: none;
 }
 
-h1{
-  color:#d5695d;
-  font-family:'Georgia';
+.open {
+  background-color: white;
+  width: 25px;
+  height: 4px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 40px;
+  right: 40px;
+}
+
+.open:before {
+  content: "";
+  background-color: white;
+  width: 25px;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after {
+  content: "";
+  background-color: white;
+  width: 25px;
+  height: 4px;
+  display: block;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen {
+  width: 24px;
+  height: 20px;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #323036;
+}
+
+.menu label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-p{
-  color: #6d6875;
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }
 
-body {
-  margin: 0;
-  font-family: 'Lato';
-}
-   
- img{
+.menu ul li a {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  color: white;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing:4px;
+  transition: 0.6s;
+  font-size: 24px;
+  font-weight: 900;
 }
-   
-.topnav a.active {background-color: #d5695d;
-  color: antiquewhite;}
-    
+
+.menu ul li a:hover {
+  color: #DEB3AE;
+  letter-spacing: 7px;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.9s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: white;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #F5F4F6;
+  z-index: -10;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 3px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(49, 94, 134, 0.2), rgba(42, 85, 111, 0.2)), url("https://plotandtheme.files.wordpress.com/2016/10/spiritedawaytraingif.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -5;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  
+  .row {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 2.6%;
+}
+  
+  .box {
+  background-color: #00BCD4;
+  width: 100%;
+  overflow: hidden;
+}
+  #image-one{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  #image-two{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-three{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-four{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-five{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-six{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-seven{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-eight{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 10%;
+  }
+  #image-nine{
+    width: 80%;
+    height: 80vw;
+    margin-bottom: 7%;
+  }
+ 
+  .menu ul li a {
+  font-size: 20px;
+
+}
+  
+  .open {
+  background-color: white;
+  width: 25px;
+  height: 4px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  right: 16px;
+}
+  
+}
+
+@media screen and (min-width: 769px){
+  #image-one {
+  margin-top: 9%;
+}
+
+#image-two {
+  margin-top: 9%;
+}
+
+#image-three {
+  margin-top: 9%;
+}
+
+#image-seven {
+  margin-bottom: 7%;
+}
+
+#image-eight {
+  margin-bottom: 7%;
+}
+
+#image-nine {
+  margin-bottom: 7%;
+}
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 1%;
+  padding-bottom: 1vw;
+}
+
+.box {
+  background-color: #00BCD4;
+  width: 22vw;
+  height: 22vw;
+  overflow: hidden;
+}
+
+#image-one {
+  background: url("https://www.dailydot.com/wp-content/uploads/2019/03/spirited-away-train-tracks.jpg") center;
+  background-size: cover;
+}
+
+#image-two {
+  background: url("https://s1.dmcdn.net/v/6M-R81VbAslaXwRxI/x1080") center;
+  background-size: cover;
+}
+
+#image-three {
+  background: url("https://www.wallpaperflare.com/static/556/593/206/anime-studio-ghibli-spirted-away-spirited-away-wallpaper.jpg") center;
+  background-size: cover;
+}
+
+#image-four {
+  background: url("http://1.bp.blogspot.com/-sCjoiv2Qkx4/TngkWl4Qj8I/AAAAAAAAAEI/04oi1te9R64/s1600/ponyo_on_the_cliff_by_the_sea%255Bh264.dts%255D%255Bniizk%255D%2B28.jpg") center;
+  background-size: cover;
+}
+
+#image-five {
+  background: url("https://s2.dmcdn.net/v/4nc5t1K4bfWha50Sm/x720") center;
+  background-size: cover;
+}
+
+#image-six {
+  background: url("https://media.discordapp.net/attachments/715080120288673832/846848755642794044/1000.png") center;
+  background-size: cover;
+}
+
+#image-seven {
+  background: url("https://3.bp.blogspot.com/-ch0QgWOoIZg/WlUBhyG-faI/AAAAAAAATqo/y4XNAu8Qx4gYwmdofDXMV_tLsSRqn677ACLcBGAs/s1600/silent-70m04s.png") center;
+  background-size: cover;
+}
+
+#image-eight {
+  background: url("https://media.discordapp.net/attachments/715080120288673832/846846915975184391/A4iUO9tJAlitPTGVbhZWpacudHHcTlpUz8L5X3GQ3aLSzAAAAAElFTkSuQmCC.png?width=714&height=604") center;
+  background-size: cover;
+}
+
+#image-nine {
+  background: url("https://ca-times.brightspotcdn.com/dims4/default/9efba17/2147483647/strip/true/crop/1775x983+0+0/resize/840x465!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F88%2F60%2Fb4af563b49ff92e6ccafe47374f9%2Fghi-oceanwaves-select1.jpg") center;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.title a{
+  padding-bottom: 5%;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+
+.title a:hover{
+  color: #DEB3AE;
+  letter-spacing: 5.5px;
+}
+
+.row-one {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.box .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61,53,65,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.footer{
+  background-color: #323036;
+}
+
+.footer p{
+  color: #fff;
+  text-align: center;
+  padding: 5vh;
+  font-size: 12px;
+}
 </style>
-
-
 </html>
